@@ -21,7 +21,6 @@ const featuresData = [
   </section>
 
 <style>
-    /* Cards */
 .features .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -30,29 +29,9 @@ const featuresData = [
   margin: 30px auto;
 }
 
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-/* Page Content */
-.page-content {
-  margin: 20px 0;
-}
-
-.page-content h2,
-.page-content h3 {
-  margin: 20px 0;
-}
-
-.page-content h2 {
-  font-size: 40px;
-}
-
-.page-content h3 {
-  font-size: 25px;
+@media (max-width: 500px) {
+  .features .container {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
